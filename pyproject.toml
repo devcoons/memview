@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "memview"
-version = "0.1.1"
+version = "0.1.2"
 description = "Introspect and visualize binary memory layouts"
 readme = "README.md"
 authors = [{ name = "Ioannis D (devcoons)", email = "support@devcoons.com" }]
