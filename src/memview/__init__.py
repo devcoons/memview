@@ -28,6 +28,7 @@ from __future__ import annotations
 
 __version__ = "0.1.0"
 __name__ = "memview"
+
 __all__ = [
     "SparseMemory",
     "MemViewError", "ParseError", "OverlapError", "MissingDataError", "LayoutError",

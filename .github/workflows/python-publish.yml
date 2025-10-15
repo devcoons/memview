@@ -46,7 +46,7 @@ jobs:
            sed -i "s/^version = \".*\"/version = \"$new_version\"/" pyproject.toml
 
            # Update version in __init__.py
-           sed -i "s/__version__ *= *['\"][^'\"]*['\"]/__version__ = '$new_version'/" src/filefilter/__init__.py
+           sed -i "s/__version__ *= *['\"][^'\"]*['\"]/__version__ = '$new_version'/" src/memview/__init__.py
 
            # Use environment file for output
            echo "new_version=$new_version" >> $GITHUB_ENV

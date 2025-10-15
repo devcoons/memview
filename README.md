@@ -1,5 +1,11 @@
 # memview
 
+![PyPI - Version](https://img.shields.io/pypi/v/memview?style=for-the-badge)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/memview?style=for-the-badge)
+![PyPI - License](https://img.shields.io/pypi/l/memview?style=for-the-badge)
+![PyPI - Wheel](https://img.shields.io/pypi/wheel/memview?style=for-the-badge&color=%23F0F)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/memview?style=for-the-badge)
+
 Inspect and visualize **binary memory layouts** from multiple input formats (Intel HEX, S-Record, hexdumps, and raw BIN).  
 Define a layout once (TOML/YAML), then decode typed fields, verify expectations, and export reports (text/JSON/CSV).
 
