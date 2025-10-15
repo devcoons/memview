@@ -6,11 +6,12 @@ build-backend = "setuptools.build_meta"
 name = "memview"
 version = "0.1.0"
 description = "Introspect and visualize binary memory layouts"
-readme = { file = "README.md", content-type = "text/markdown" }
+readme = "README.md"
 authors = [{ name = "Ioannis D (devcoons)", email = "support@devcoons.com" }]
+
 license = "MIT"
-requires-python = ">=3.11"
-keywords = ["memview", "firmware", "binary", "intel-hex", "srec"]
+license-files = ["LICENSE"]
+
 classifiers = [
   "Development Status :: 4 - Beta",
   "Intended Audience :: Developers",
@@ -25,7 +26,9 @@ classifiers = [
   "Programming Language :: Python :: Implementation :: CPython",
   "Programming Language :: Python :: Implementation :: PyPy"
 ]
+keywords = ["memview", "firmware", "binary", "intel-hex", "srec"]
 dependencies = ["ihexsrec>=0.1.0"]
+requires-python = ">=3.11"
 
 [project.optional-dependencies]
 yaml  = ["PyYAML>=6.0"]
@@ -42,9 +45,6 @@ memview = "memview.cli:main"
 Homepage = "https://github.com/devcoons/memview"
 Issues   = "https://github.com/devcoons/memview/issues"
 
-[tool.setuptools]
-license-files = ["LICENSE"]
-
 [tool.setuptools.packages.find]
 where = ["src"]
 include = ["memview*"]
@@ -53,13 +53,3 @@ include = ["memview*"]
 addopts = "-q"
 testpaths = ["tests"]
 pythonpath = ["src"]
-
-[tool.mypy]
-python_version = "3.11"
-strict = true
-packages = ["memview"]
-
-[tool.ruff]
-target-version = "py311"
-line-length = 100
-src = ["src"]
